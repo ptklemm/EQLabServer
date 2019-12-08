@@ -1,0 +1,54 @@
+{
+  "name": "eqlab-server",
+  "version": "0.3.0",
+  "description": "EQLab Server",
+  "author": "ptklemm",
+  "license": "ISC",
+  "main": "eqlab.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "nodemon eqlab.js",
+    "client": "cd ../client && npm start"
+  },
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "event-stream": "^4.0.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-sanitize-escape": "^1.1.0",
+    "express-validator": "^5.3.0",
+    "extend": "^3.0.2",
+    "fecha": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "is-valid-path": "^0.1.1",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "mysql-events": "0.0.11",
+    "mysql2": "^1.6.4",
+    "node-cleanup": "^2.1.2",
+    "obj2gltf": "^2.3.2",
+    "sequelize": "^4.41.2",
+    "socket.io": "^2.1.1",
+    "three": "^0.98.0",
+    "three-mtl-loader": "^1.0.2",
+    "three-obj-loader": "^1.1.3",
+    "treeize": "^2.1.2",
+    "xlsx": "^0.14.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "debug": "^4.1.0",
+    "eslint": "^5.9.0"
+  }
+}

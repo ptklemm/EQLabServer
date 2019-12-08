@@ -1,0 +1,5 @@
+# SQL
+SHOW COLUMNS FROM spells_new
+
+# CSV to JSON Template
+  {lb}{h1}: "{f1}", {h2}: "{f2}", {h3}: "{f3}", {h4}: "{f4}"{rb}
